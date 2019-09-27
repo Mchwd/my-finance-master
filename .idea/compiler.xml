@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="my-finance-commons" />
+        <module name="my-finance-web-ui" />
+        <module name="my-finance-web-api-personData" />
+        <module name="my-finance-domain" />
+        <module name="my-finance-web-api-login" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="my-finance-commons" target="1.8" />
+      <module name="my-finance-dependencies" target="1.8" />
+      <module name="my-finance-domain" target="1.8" />
+      <module name="my-finance-master" target="1.8" />
+      <module name="my-finance-web-api" target="1.8" />
+      <module name="my-finance-web-api-login" target="1.8" />
+      <module name="my-finance-web-api-personData" target="1.8" />
+      <module name="my-finance-web-ui" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/my-finance-commons/my-finance-commons.iml" filepath="$PROJECT_DIR$/my-finance-commons/my-finance-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-dependencies/my-finance-dependencies.iml" filepath="$PROJECT_DIR$/my-finance-dependencies/my-finance-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-domain/my-finance-domain.iml" filepath="$PROJECT_DIR$/my-finance-domain/my-finance-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-master.iml" filepath="$PROJECT_DIR$/my-finance-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-web-api/my-finance-web-api.iml" filepath="$PROJECT_DIR$/my-finance-web-api/my-finance-web-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-web-api/my-finance-web-api-login/my-finance-web-api-login.iml" filepath="$PROJECT_DIR$/my-finance-web-api/my-finance-web-api-login/my-finance-web-api-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-web-api/my-finance-web-api-personData/my-finance-web-api-personData.iml" filepath="$PROJECT_DIR$/my-finance-web-api/my-finance-web-api-personData/my-finance-web-api-personData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-finance-web-ui/my-finance-web-ui.iml" filepath="$PROJECT_DIR$/my-finance-web-ui/my-finance-web-ui.iml" />
+    </modules>
+  </component>
+</project>

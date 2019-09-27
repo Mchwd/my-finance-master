@@ -2,6 +2,7 @@ package com.finance.personData.web.controller;
 
 import com.finance.personData.dto.PersonDataDto;
 import com.finance.personData.service.PersonDataService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ public class PersonDataController {
 
     /**
      * 根据id查找数据
+     *
      * @param integer
      * @return
      */
@@ -27,6 +29,7 @@ public class PersonDataController {
 
     /**
      * 查找所有的记录
+     *
      * @return
      */
     @RequestMapping("/selectAllByPrimaryKey")
@@ -34,46 +37,39 @@ public class PersonDataController {
         return personDataService.selectAllByPrimaryKey();
     }
 
-
     /**
      * 添加记录
      * 1、主键自增
+     *
      * @param personDataDto
      * @return
      */
     @RequestMapping("/insert")
-    public Integer insert(PersonDataDto personDataDto) {
+    public Integer insert(@Param("personDataDto") PersonDataDto personDataDto) {
+
         return personDataService.insert(personDataDto);
     }
 
-    /**
-     * 添加记录
-     * 2、主键由代码指定
-     * @param personDataDto
-     * @return
-     */
-    @RequestMapping("/insertSelective")
-    public Integer insertSelective(PersonDataDto personDataDto) {
-        return personDataService.insertSelective(personDataDto);
-    }
 
     /**
      * 根据主键删除
+     *
      * @param integer
      * @return
      */
     @RequestMapping("/deleteByPrimaryKey")
-    public Integer deleteByPrimaryKey(Integer integer){
-        return  personDataService.deleteByPrimaryKey(integer);
+    public Integer deleteByPrimaryKey(@Param("integer") Integer integer) {
+        return personDataService.deleteByPrimaryKey(integer);
     }
 
     /**
      * 修改数据
+     *
      * @param personDataDto
      * @return
      */
     @RequestMapping("/updateByPrimaryKey")
-    public Integer updateByPrimaryKey(PersonDataDto personDataDto){
+    public Integer updateByPrimaryKey(@Param("personDataDto") PersonDataDto personDataDto) {
         return personDataService.updateByPrimaryKey(personDataDto);
     }
 
